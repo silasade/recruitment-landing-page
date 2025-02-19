@@ -44,12 +44,15 @@ function Form() {
   return (
     <div>
       {contextHolder}
-      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5 w-100">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex flex-col gap-5 w-100"
+      >
         <div className="w-full flex flex-col gap-2">
           <input
             type="text"
             placeholder="First Name"
-            className="w-[100%] h-[40px] md:h-[66px] p-4 rounded-full bg-cardBg"
+            className="w-full h-[40px] md:h-[66px] p-4 rounded-full bg-cardBg"
             {...register("firstName", {
               required: "Please enter your first name",
             })}
@@ -62,7 +65,7 @@ function Form() {
           <input
             type="text"
             placeholder="Last Name"
-            className="w-[100%] h-[40px] md:h-[66px] p-4 rounded-full bg-cardBg"
+            className="w-full h-[40px] md:h-[66px] p-4 rounded-full bg-cardBg"
             {...register("lastName", {
               required: "Please enter your last name",
             })}
@@ -75,7 +78,7 @@ function Form() {
           <input
             type="email"
             placeholder="Email"
-            className="w-[100%] h-[40px] md:h-[66px] p-4 rounded-full bg-cardBg"
+            className="w-full h-[40px] md:h-[66px] p-4 rounded-full bg-cardBg"
             {...register("email", { required: "Please enter your email" })}
           />
           {errors.email?.message && (

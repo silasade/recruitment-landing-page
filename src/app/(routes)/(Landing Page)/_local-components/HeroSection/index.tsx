@@ -34,13 +34,13 @@ function HeroSection() {
 
   return (
     <div
-      className={`min-h-[80vh]   pt-[80px] w-[100%] mx-auto grid gap-y-4 place-items-center px-6 bg-no-repeat md:px-12 bg-left-top bg-contain pl-10 pr-10`}
+      className={`min-h-[80vh]  pt-[80px] w-full grid gap-y-4 place-items-center px-6 bg-no-repeat md:px-12 bg-left-top bg-contain pl-10 pr-10`}
       style={{ backgroundImage: `url(${backgroundImageUrl})` }}
       ref={wrapper}
     >
       {/* Banner */}
-      <div className="w-[100%] md:w-fit py-8 flex flex-col gap-6">
-        <div className="bg-bannerBg max-w-[100%] w-[100%] md:w-fit px-4 md:px-6 h-[44px] mx-auto flex justify-center items-center rounded-xl">
+      <div className="w-full md:w-fit py-8 flex flex-col gap-6">
+        <div className="bg-bannerBg w-full md:w-fit px-4 md:px-6 h-[44px] flex justify-center items-center rounded-xl">
           <p className="text-[17px] font-[400] leading-[24px] text-bannerText text-center line-clamp-1  text-clip overflow-hidden">
             <span className="font-semibold">Eagle AI Labs:</span> Partnership
             and Co-Ownership of a U.S. Regulated Crypto Hedgefund. This enables
@@ -52,9 +52,9 @@ function HeroSection() {
         </div>
 
         {/* Main Section */}
-        <div className="flex flex-col md:flex-row gap-10 items-center w-[100%] md:w-84 justify-between">
+        <div className="flex flex-col md:flex-row gap-10 items-center w-full md:w-84 justify-between">
           {/* Text Content */}
-          <div className="flex flex-col gap-6 w-[100%] md:w-1/2">
+          <div className="flex flex-col gap-6 w-full md:w-1/2">
             <h1 className="text-[48px] md:text-[60px] lg:text-[72px] font-[400] leading-[1.2] bg-gradient-to-b from-heroTextGradientOne to-heroTextGradientTwo bg-clip-text text-transparent">
               Pioneering the Future of Digital Asset Investment
             </h1>
@@ -75,7 +75,7 @@ function HeroSection() {
           {/* Hero Image */}
           <div
             ref={heroImage}
-            className="relative w-[100%] max-w-[100%] opacity-0 md:w-full md:max-w-[435px] h-[500px] md:h-[817px]"
+            className="relative w-full  opacity-0 md:w-full md:max-w-[435px] h-[500px] md:h-[817px]"
           >
             <Image
               src={attachCloudinaryPrefix(

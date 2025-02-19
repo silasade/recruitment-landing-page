@@ -15,11 +15,12 @@ function LandingPagelayout({ children }: Props) {
     "v1739959653/shutterstock_1969544767_on7k1r.webp"
   );
   return (
-    <div className="bg-mobileBackground md:bg-destopBbackground overflow-hidden">
+    <div className="absolute  bg-mobileBackground md:bg-destopBbackground overflow-x-hidden w-full max-w-screen min-h-screen p-0">
       <Header />
+
       {children}
       <div
-      className="bg-right-bottom bg-contain bg-no-repeat"
+        className="bg-right-bottom bg-contain bg-no-repeat"
         style={{
           backgroundImage: isMobile ? `url(${backgroundImageUrl})` : "",
         }}

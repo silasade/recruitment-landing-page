@@ -15,7 +15,7 @@ function Home() {
     "v1739962072/Vector_1_gewx6w.webp"
   );
   return (
-    <div>
+    <div className="overflow-x-hidden w-full min-h-screen p-0">
       <HeroSection />
       <NewEraSection />
       <div className="relative z-10">

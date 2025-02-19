@@ -1,3 +1,4 @@
+"use client"
 import { message } from "antd";
 
 // Use this inside a React component

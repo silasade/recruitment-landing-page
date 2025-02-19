@@ -55,10 +55,7 @@ function TradeDividendSection() {
           ))}
         </ul>
       </div>
-      <div
-        
-        className="relative w-full w-[100%] md:max-w-1/2 flex-auto h-[279px] md:h-[510px]"
-      >
+      <div className="relative w-full w-full md:max-w-1/2 flex-auto h-[279px] md:h-[510px]">
         <Image
           src={attachCloudinaryPrefix("v1739954901/Trade3_1_1_1_axlboi.webp")}
           alt="era image"
