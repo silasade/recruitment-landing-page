@@ -98,7 +98,7 @@ function Form() {
         <Button
           htmlType="submit"
           loading={isSubmitting}
-          className="self-end rounded-full text-[16px] border-0 font-[400] leading-[21px] text-white focus:!text-white hover:!text-white w-[257px] h-[45px] bg-gradient-to-br from-[#1870F6] to-[#32FEFE] focus:!bg-[#1870F6] hover:!bg-[#1870F6]"
+          className="self-end rounded-full text-[16px] border-0 font-[400] leading-[21px] text-white focus:!text-white hover:!text-white !w-[100%] md:w-[257px] h-[45px] bg-gradient-to-br from-[#1870F6] to-[#32FEFE] focus:!bg-[#1870F6] hover:!bg-[#1870F6]"
         >
           Register your interest now
         </Button>
