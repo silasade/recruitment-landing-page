@@ -9,7 +9,7 @@ import { attachCloudinaryPrefix } from "@/app/hooks/attachCloudinaryPrefix";
 import { useMediaQuery } from "react-responsive";
 
 function Home() {
-  const isMobile = useMediaQuery({ query: "(min-width: 1024px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
 
   const backgroundImageUrl = attachCloudinaryPrefix(
     "v1739962072/Vector_1_gewx6w.webp"
