@@ -9,7 +9,7 @@ type Props = {
   children: React.ReactNode;
 };
 function LandingPagelayout({ children }: Props) {
-  const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
 
   const backgroundImageUrl = attachCloudinaryPrefix(
     "v1739959653/shutterstock_1969544767_on7k1r.webp"

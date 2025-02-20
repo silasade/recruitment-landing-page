@@ -23,7 +23,7 @@ function Home() {
         <div
           className="absolute inset-0 w-full h-full bg-no-repeat bg-right-bottom bg-contain -z-10 opacity-25"
           style={{
-            backgroundImage: isMobile ? `url(${backgroundImageUrl})` : "",
+            backgroundImage: isMobile ?   "": `url(${backgroundImageUrl})`,
           }}
         ></div>
 
