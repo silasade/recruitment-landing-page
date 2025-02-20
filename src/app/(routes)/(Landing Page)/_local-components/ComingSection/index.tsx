@@ -5,7 +5,7 @@ import { attachCloudinaryPrefix } from "@/app/hooks/attachCloudinaryPrefix";
 import { useMediaQuery } from "react-responsive";
 
 function ComingSection() {
-  const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
+  const isMobile = useMediaQuery({ query: "(min-width: 800px)" });
 
   const list: string[] = [
     "Full fund details and officer announcements",
@@ -22,7 +22,7 @@ function ComingSection() {
       <div
         className="absolute inset-x-0 -top-10 -bottom-10 w-full bg-no-repeat bg-center bg-contain -z-10 opacity-25"
         style={{
-          backgroundImage: isMobile ?  "":`url(${backgroundImageUrl})`
+          backgroundImage: isMobile ? `url(${backgroundImageUrl})` : "none",
         }}
       ></div>
 

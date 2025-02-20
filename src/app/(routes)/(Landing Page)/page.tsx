@@ -6,10 +6,10 @@ import NewEraSection from "./_local-components/NewEraSection";
 import TradeDividendSection from "./_local-components/TradeDividendSection";
 import LimitedAvailabSectionindex from "./_local-components/LimitedAvailabSection";
 import { attachCloudinaryPrefix } from "@/app/hooks/attachCloudinaryPrefix";
-import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from 'react-responsive';
 
 function Home() {
-  const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
+  const isMobile = useMediaQuery({ query: "(min-width: 800px)" });
 
   const backgroundImageUrl = attachCloudinaryPrefix(
     "v1739962072/Vector_1_gewx6w.webp"
@@ -21,9 +21,9 @@ function Home() {
       <div className="relative z-10">
         {/* Background Image Layer */}
         <div
-          className="absolute inset-0 w-full h-full bg-no-repeat bg-right-bottom bg-contain -z-10 opacity-25"
+          className="absolute inset-0 w-full bg-none md:bg-inherit h-full bg-no-repeat bg-right-bottom bg-contain -z-10 opacity-25"
           style={{
-            backgroundImage: isMobile ?   "": `url(${backgroundImageUrl})`,
+            backgroundImage: isMobile ? `url(${backgroundImageUrl})`: "unset" ,
           }}
         ></div>
 

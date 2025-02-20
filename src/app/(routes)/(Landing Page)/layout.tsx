@@ -22,7 +22,7 @@ function LandingPagelayout({ children }: Props) {
       <div
         className="bg-right-bottom bg-contain bg-no-repeat"
         style={{
-          backgroundImage: isMobile ? `url(${backgroundImageUrl})` : "",
+          backgroundImage: isMobile ? `url(${backgroundImageUrl})` :  "none",
         }}
       >
         <ComingSection />
