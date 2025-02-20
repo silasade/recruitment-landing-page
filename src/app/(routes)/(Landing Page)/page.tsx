@@ -6,14 +6,14 @@ import NewEraSection from "./_local-components/NewEraSection";
 import TradeDividendSection from "./_local-components/TradeDividendSection";
 import LimitedAvailabSectionindex from "./_local-components/LimitedAvailabSection";
 import { attachCloudinaryPrefix } from "@/app/hooks/attachCloudinaryPrefix";
-
+import { useEffect } from "react";
 function Home() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
-  useState(() => {
+  useEffect(() => {
     if (window.innerWidth >= 800) {
       setIsMobile(true);
     }
-  });
+  },[]);
   const backgroundImageUrl = attachCloudinaryPrefix(
     "v1739962072/Vector_1_gewx6w.webp"
   );
