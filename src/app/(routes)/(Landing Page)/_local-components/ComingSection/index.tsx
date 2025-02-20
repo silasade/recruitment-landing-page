@@ -2,10 +2,14 @@
 
 import React from "react";
 import { attachCloudinaryPrefix } from "@/app/hooks/attachCloudinaryPrefix";
-import { useMediaQuery } from "react-responsive";
-
+import { useEffect,useState } from "react";
 function ComingSection() {
-  const isMobile = useMediaQuery({ query: "(min-width: 800px)" });
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+    useEffect(() => {
+      if (window.innerWidth >= 800) {
+        setIsMobile(true);
+      }
+    },[]);
 
   const list: string[] = [
     "Full fund details and officer announcements",
